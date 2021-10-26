@@ -8,7 +8,7 @@ class BuldScreen extends StatefulWidget {
 }
 
 class _BuldScreenState extends State<BuldScreen> {
-  var isBulbOn = false;
+  var is_Bulb_On = false;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class _BuldScreenState extends State<BuldScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  isBulbOn
+                  is_Bulb_On
                       ? Image.asset("assets/bulb_On.jpg")
                       : Image.network(
                           "https://media.istockphoto.com/photos/light-bulb-on-black-picture-id121075544?k=20&m=121075544&s=612x612&w=0&h=x3yo_T7C3CYfOxqr0Dqdlkm1OfgSD43FGvxiVd4MQNA=",
@@ -35,7 +35,7 @@ class _BuldScreenState extends State<BuldScreen> {
                   TextButton(
                     onPressed: () {
                       setState(() {
-                        isBulbOn = !isBulbOn;
+                        is_Bulb_On = !is_Bulb_On;
                       });
                     },
                     child: Text("Bulb On/ Off"),
